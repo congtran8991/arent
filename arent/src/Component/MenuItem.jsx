@@ -17,6 +17,7 @@ const MenuItem = (props) => {
       background={COLOR.gray_400}
       width={"240px"}
       color={COLOR.light}
+      cursor={"pointer"}
     >
       {title}
     </Box>
