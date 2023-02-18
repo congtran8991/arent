@@ -1,6 +1,6 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
-import { COLOR } from "../Constant";
+import { COLOR } from "../../Constant";
 
 const DiaryItem = (props) => {
   const { time, content, num } = props;

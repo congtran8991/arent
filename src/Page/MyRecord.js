@@ -1,10 +1,10 @@
 import React from "react";
 import { Box, Flex } from "@chakra-ui/react";
 import { COLOR } from "../Constant";
-import Recommend from "../Component/Recommend";
+import RecommendItem from "../Component/MyRecord/RecommendItem";
 import BtnBottomChart from "../Component/BtnBottomChart";
-import ExerciseItem from "../Component/ExerciseItem";
-import DiaryItem from "../Component/DiaryItem";
+import ExerciseItem from "../Component/MyRecord/ExerciseItem";
+import DiaryItem from "../Component/MyRecord/DiaryItem";
 import { Line } from "react-chartjs-2";
 import BtnSeeMore from "../Component/BtnSeeMore";
 
@@ -29,7 +29,7 @@ const MyRecord = () => {
         >
           {listRecommend.map((item, index) => {
             return (
-              <Recommend
+              <RecommendItem
                 key={index}
                 text1={item.text1}
                 text2={item.text2}

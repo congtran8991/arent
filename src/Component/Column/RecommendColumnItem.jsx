@@ -1,5 +1,5 @@
 import React from "react";
-import { COLOR } from "../Constant";
+import { COLOR } from "../../Constant";
 import { Box } from "@chakra-ui/react";
 
 const RecommendColumn = (props) => {

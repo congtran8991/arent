@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Flex } from "@chakra-ui/react";
 import BtnSeeMore from "../Component/BtnSeeMore";
-import RecommendColumn from "../Component/RecommendColumn";
-import FoodColumn from "../Component/FoodColumn";
+import RecommendColumnItem from "../Component/Column/RecommendColumnItem";
+import FoodColumnItem from "../Component/Column/FoodColumnItem";
 
 import {
   listRecommendColumn,
@@ -21,7 +21,7 @@ const Column = () => {
         >
           {listRecommendColumn.map((item, index) => {
             return (
-              <RecommendColumn
+              <RecommendColumnItem
                 key={index}
                 title={item.title}
                 content={item.content}
@@ -36,7 +36,7 @@ const Column = () => {
             <Flex flexWrap={"wrap"}>
               {listFoodColumnItem.map((item, index) => {
                 return (
-                  <FoodColumn
+                  <FoodColumnItem
                     key={index}
                     srcImage={item.image}
                     time={item.time}

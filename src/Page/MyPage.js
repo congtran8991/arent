@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Image, Flex } from "@chakra-ui/react";
 import { COLOR } from "../Constant";
-import Meal from "../Component/Meal";
-import Food from "../Component/Food";
+import MealItem from "../Component/MyPage/MealItem";
+import FoodItem from "../Component/MyPage/FoodItem";
 import BtnSeeMore from "../Component/BtnSeeMore";
 import ImageD01 from "../asset/images/d01.jpg";
 
@@ -44,7 +44,7 @@ function MyPage() {
           alignItems="center"
         >
           {listMeal.map((item, index) => {
-            return <Meal key={index} icon={item.icon} text={item.title} />;
+            return <MealItem key={index} icon={item.icon} text={item.title} />;
           })}
         </Flex>
       </Box>
@@ -57,7 +57,7 @@ function MyPage() {
           alignItems="center"
         >
           {foodList.map((item, index) => {
-            return <Food srcImage={item.image} text={item.text} key={index} />;
+            return <FoodItem srcImage={item.image} text={item.text} key={index} />;
           })}
         </Flex>
       </Box>

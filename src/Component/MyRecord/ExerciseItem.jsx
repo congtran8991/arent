@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Flex } from "@chakra-ui/react";
-import { COLOR } from "../Constant";
+import { COLOR } from "../../Constant";
 
 const ExerciseItem = (props) => {
   const { title, kcal, time } = props;

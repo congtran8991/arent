@@ -1,5 +1,5 @@
 import React from "react";
-import { COLOR } from "../Constant";
+import { COLOR } from "../../Constant";
 import { Box, Image, Flex } from "@chakra-ui/react";
 
 const Recommend = (props) => {
@@ -19,6 +19,7 @@ const Recommend = (props) => {
             opacity={0.25}
             objectFit={"cover"}
             height={"350px"}
+            minWidth={"350px"}
             width={"100%"}
             src={srcImage}
           />

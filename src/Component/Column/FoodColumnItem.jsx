@@ -1,12 +1,12 @@
 import React from "react";
 import { Box, Image } from "@chakra-ui/react";
-import { COLOR } from "../Constant";
+import { COLOR } from "../../Constant";
 
 const FoodColumn = (props) => {
   const { srcImage, time, content1, content2, num } = props;
-  const numPr = num%4 ? 3 : 0
+  const numPr = num % 4 ? 3 : 0;
   return (
-    <Box width={"25%"} height={"auto"} pr={numPr} pb={3}>
+      <Box width={"25%"} height={"auto"} pr={numPr} pb={3}>
       <Box width={"100%"} background={COLOR.light} color={COLOR.gray_400}>
         <Box position={"relative"}>
           <Image
