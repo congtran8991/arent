@@ -1,0 +1,9 @@
+name: hello world
+on: #Chạy khi ai đó 
+  push: #push
+    branches: [main] #vào branch main
+jobs: 
+  say-hello: 
+  runs-on: macos #Nền tảng
+  steps: 
+    - run: hello Trần Văn Công
