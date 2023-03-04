@@ -4,6 +4,6 @@ on: #Chạy khi ai đó
     branches: [main] #vào branch main
 jobs: 
   say-hello: 
-  runs-on: macos-latest #Nền tảng
+  runs-on: macos-latest
   steps: 
     - run: hello Trần Văn Công
