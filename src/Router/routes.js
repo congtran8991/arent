@@ -2,20 +2,28 @@ import React from 'react';
 import MyPage from '../Page/MyPage';
 import MyRecord from '../Page/MyRecord';
 import Column from '../Page/Column';
+import {
+    Navigate,
+  } from "react-router-dom";
 export const routes = [
     {
         path: "/",
         exact: false,
-        main: <MyPage/>
+        element: <Navigate to="/homepage"/>,
+    },
+    {
+        path: "/homepage",
+        exact: false,
+        element: <MyPage/>,
     },
     {
         path: "/my-record",
         exact: false,
-        main: <MyRecord />
+        element: <MyRecord />
     },
     {
         path: "/column",
         exact: false,
-        main: <Column />
+        element: <Column />
     }
 ];

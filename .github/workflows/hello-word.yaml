@@ -1,9 +1,9 @@
-name: hello world
-on: #Chạy khi ai đó 
-  push: #push
-    branches: [main] #vào branch main
-jobs: 
-  say-hello: 
-  runs-on: macos-latest
-  steps: 
-    - run: hello Trần Văn Công
+# name: hello world
+# on: #Chạy khi ai đó
+#   push: #push
+#     branches: [main] #vào branch main
+# jobs:
+#   say-hello:
+#   runs-on: ubuntu-latest
+#   steps:
+#     - run: hello tran-congdwdw
