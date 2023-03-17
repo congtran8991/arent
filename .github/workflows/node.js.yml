@@ -37,3 +37,4 @@ jobs:
       with:
         target_branch: gh-pages
         build_dir: build
+    - run: yarn run deploy
