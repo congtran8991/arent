@@ -29,7 +29,15 @@ jobs:
           else
           npm i
           fi
-    - run: npm run build --if-present
+    # - run: npm run build --if-present
+    - run: |
+          if [ -e yarn.lock ]; then
+          yarn run build
+          elif [ -e package-lock.json ]; then
+          npm run build
+          else
+          npm i
+          fi
     - run: npm test
     
     - name: Deploy 🚀
