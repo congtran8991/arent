@@ -21,15 +21,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: |
-          # if [ -e yarn.lock ]; then
-          # npm install yarn then
-          # yarn install --frozen-lockfile
-          # elif [ -e package-lock.json ]; then
-          npm ci
-          # else
-          # npm i
-          # fi
+    - run: npm ci
     - run: npm run build
     # - run: npm test
     
