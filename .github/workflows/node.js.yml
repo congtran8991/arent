@@ -33,7 +33,7 @@ jobs:
     # - run: npm test
     
     - name: Deploy 🚀
-      uses: congtran8991/github-pages-deploy-action@v4
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: build # The folder the action should deploy.
         token: ${{ secrets.ACCESS_TOKEN }}
