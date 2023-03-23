@@ -77,7 +77,7 @@ const Header = () => {
           cursor={"pointer"}
             src={Logo}
             onClick={() => {
-              navigate("/");
+              navigate("/homepage");
             }}
           />
         </Box>
