@@ -3,6 +3,7 @@ import { Box, Flex } from "@chakra-ui/react";
 import { COLOR } from "../Constant";
 
 const Footer = () => {
+  console.log("hvhd")
   return (
     <Box width={"100%"} background={COLOR.dark_500}>
       <Flex
