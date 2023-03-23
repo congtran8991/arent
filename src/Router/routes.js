@@ -8,22 +8,22 @@ import {
 export const routes = [
     {
         path: "/arent",
-        exact: false,
+        exact: true,
         element: <Navigate to="/homepage"/>,
     },
     {
         path: "/homepage",
-        exact: false,
+        exact: true,
         element: <MyPage/>,
     },
     {
         path: "/my-record",
-        exact: false,
+        exact: true,
         element: <MyRecord />
     },
     {
         path: "/column",
-        exact: false,
+        exact: true,
         element: <Column />
     }
 ];
