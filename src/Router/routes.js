@@ -7,12 +7,12 @@ import {
   } from "react-router-dom";
 export const routes = [
     {
-        path: "/",
+        path: "/s",
         exact: false,
         element: <Navigate to="/homepage"/>,
     },
     {
-        path: "/homepage",
+        path: "/",
         exact: false,
         element: <MyPage/>,
     },
